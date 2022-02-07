@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:background="@color/background">
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/editTextColorNotOnFocus">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cati"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="@color/textPrimary"
+            android:textSize="30sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fy"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="@color/accent_primary"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logoLayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/sanfranciscobold"
+                android:text="Hello there!"
+                android:textColor="@color/textPrimary"
+                android:textSize="30sp" />
+            <LinearLayout
+                android:id="@+id/header"
+                android:layout_below="@id/hello"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:padding="20dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/catImage"
+                    android:layout_width="135sp"
+                    android:layout_height="135sp"
+                    app:civ_border_color="@color/accent_primary"
+                    app:civ_border_width="2dp"
+                    android:src="@drawable/logo"/>
+                <TextView
+                    android:id="@+id/cat_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="ndnjdn"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/sfmedium"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="35dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfmedium"
+                    android:text="About"
+                    android:textColor="@color/textPrimary"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sanfrancisco"
+                    android:text="About"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfmedium"
+                        android:text="Temperament"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/temprament"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="0dp"
+                        android:fontFamily="@font/sanfrancisco"
+                        android:text="About"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfmedium"
+                        android:text="Weight"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/lifeSpan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/sanfrancisco"
+                        android:text="About"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sfmedium"
+                        android:text="Origin:"
+                        android:textColor="@color/textPrimary"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/origin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/sanfrancisco"
+                        android:text="About"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="20sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/wikiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/des"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/buttonbg"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="See more on VETStreet"
+                android:textColor="@color/accent_primary"
+                android:fontFamily="@font/sfmedium"
+                android:padding="10dp"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"/>
+            <TextView
+                android:id="@+id/err"
+                android:layout_below="@id/wikiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/err"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

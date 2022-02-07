@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Catify</string>
+    <string name="err_message">Sorry vetstreet link is not available for this cat!</string>
+    <string name="unit">\" kilogram\"</string>
+</resources>

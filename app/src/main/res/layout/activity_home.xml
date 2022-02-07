@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/logoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@color/editTextColorNotOnFocus">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cati"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="@color/textPrimary"
+            android:textSize="30sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fy"
+            android:fontFamily="@font/poppinslight"
+            android:textColor="@color/accent_primary"
+            android:textSize="30sp"/>
+    </LinearLayout>
+    <!--
+    <LinearLayout
+        android:id="@+id/mid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/logoLayout"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello there!"
+            android:fontFamily="@font/sanfranciscobold"
+            android:textColor="@color/textPrimary"
+            android:textSize="30sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a breed to know more about it!"
+            android:fontFamily="@font/sanfrancisco"
+            android:textColor="@color/textSecondary"
+            android:textSize="18sp"/>
+    </LinearLayout>
+    -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/logoLayout"/>
+
+</RelativeLayout>
